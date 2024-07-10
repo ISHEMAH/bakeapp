@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes move-to-cart {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(calc(100vw - 50px), calc(-100vh + 50px));
+  }
+}
+
+.animate-to-cart {
+  animation: move-to-cart 0.5s forwards;
+}

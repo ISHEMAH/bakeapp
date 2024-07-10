@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+  font-family: "DM Sans";
+}
+
+@keyframes move-to-plate {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 100px); /* Adjust these values to position items on the plate */
+  }
+}
+
+.animate-to-plate {
+  animation: move-to-plate 1s forwards;
+}
